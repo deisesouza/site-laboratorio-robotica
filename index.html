@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+	DEISE SOUZA - Desenvolvedora Web FrontEnd
+	Todos os Direitos Reservados.
+-->
+<html lang="pt-BR">
+<head>
+	<!--META TAGS-->
+	<title>Laboratório de Robótica</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="author" contents="Deise Souza">
+	<meta name="description" content="Conteúdos para estudos de robótica educacional">
+	<meta name"robots" content="index, follow">
+	
+	<!--LINKS-->
+	<link rel="stylesheet" href="css/estilo-home.css" media="all">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="icon" href="img/icone.jpg">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+	<!--SCRIPTS-->
+	<script   src="js/jquery-1.12.4.min.js"></script>
+	<script   src="js/script.js"></script>
+	
+</head>
+
+<body> 
+
+				
+	<!-- Header -->
+	<header class="topo"> 
+				<audio id="som" src="audio/acessibilidade.mp3" type="audio/mpeg"></audio>
+				<button href="#" class="btn-menu" title="menu" tabindex="3" accesskey="1"><i class="fa fa-bars fa-2x"></i></button>
+
+			<nav class="menu"> 
+				<a class="btn-close" href="#"><i class="fa fa-times"></i></a>
+				<figure ><img class="foto-menu" src="img/foto.png"></figure>
+				
+				<ul>
+					<li><a href="#" title="Deise Souza">Deise Souza</a></li>
+					<li><a href="#" title="github" tabindex="3" accesskey="h"><i class="fa fa-github-square fa-1x" aria-hidden="true"></i>github</a></li>
+					<li><a href="https://www.behance.net/deisesouza" target="_blank"  title="behance" tabindex="4" accesskey="c"><i class="fa fa-behance-square fa-1x" aria-hidden="true"></i>behance</a></li>
+					<li><a href="https://bitbucket.org/Deise_Souza/" target="_blank" title="bitbucket" tabindex="5" accesskey="s"><i class="fa fa-bitbucket-square fa-1x" aria-hidden="true"></i>bitbucket</a></li>
+					<li><a href="https://br.linkedin.com/in/deise-santana-de-souza-3b004647" target="_blank" title="linkedin" tabindex="5" accesskey="s"><i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i>linkedin</a></li>
+				</ul>
+			</nav>	
+
+			<nav id="menu2">
+				<ul>
+					<li><a href="#" title="Acessibilidade" tabindex="1" accesskey="m" onclick="tocar();"><i class="fa fa-volume-up fa-1.8x"></i></a></li>
+					<li><a tabindex="1" title="Parar Áudio" tabindex="2" accesskey="5" onclick="parar();"><i class="fa fa-volume-off fa-1.8x"></i></a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<!-- Main -->
+	<main class="banner-inicio">
+		
+			<article>
+				<div class="frente">				          
+						<h1><img src="img/robos.png" class="animated bounce" alt="Rôbos"></h1>
+						<h2>Laboratório de Robótica!</h2>
+						<a class="entrar" href="aprender-robotica.html" title="entrar">Entrar</a>
+
+				</div>
+			</article>
+	</main>
+		
+	<!--footer-->
+ 	<footer class="rodape">
+	        <div class="social-icons">
+		            <a href="#"><i class="fa fa-facebook"></i></a>
+		            <a href="#"><i class="fa fa-twitter"></i></a>
+		            <a href="#"><i class="fa fa-google"></i></a>
+		            <a href="#"><i class="fa fa-instagram"></i></a>
+	        </div>
+		          	<p class="copyright">Copyright &copy; Deise Souza. Todos os direitos reservados.</p>
+    </footer>       
+       
+	<!-- SCRIPT -->
+	<script> 
+			$(".btn-menu").click(function(){
+				$(".menu").show();
+			});
+
+			$(".btn-close").click(function(){
+				$(".menu").hide();
+			});
+
+	</script>
+			
+</body>
+</html>

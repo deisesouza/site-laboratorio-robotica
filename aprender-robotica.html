@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--
+	DEISE SOUZA - Desenvolvedora Web FrontEnd
+	Todos os Direitos Reservados.
+-->
+<html lang="pt-BR">
+<head>
+	<!--META TAGS-->
+	<title>Laboratório de Robótica</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="author" contents="Deise Souza">
+	<meta name="description" content="Conteúdos para estudos de robótica educacional">
+	<meta name"robots" content="index, follow">
+
+	<!--LINKS-->
+	<link rel="stylesheet" href="css/estilo.css" media="all">
+	<link rel="stylesheet" href="css/hover-min.css">
+	<link rel="icon" href="img/icone.jpg">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+	<!--SCRIPTS-->
+	<script   src="https://code.jquery.com/jquery-1.12.3.js"></script>
+	<script   src="js/script.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script> 
+	
+</head>
+
+<body> <!--TOPO DA PÁGINA-->
+	<header class="topo"> 
+				<audio id="som" src="audio/acessibilidade.mp3" type="audio/mpeg"></audio>
+				<button href="#" class="btn-menu" title="menu" tabindex="3" accesskey="1"><i class="fa fa-bars fa-2x"></i></button>
+
+			<nav class="menu"> 
+				<a class="btn-close" href="#"><i class="fa fa-times"></i></a>
+				<figure ><img class="foto-menu" src="img/foto.png"></figure>
+				
+				<ul>
+					<li><a href="#" title="Deise Souza">Deise Souza</a></li>
+					<li><a href="#" title="github" tabindex="3" accesskey="h"><i class="fa fa-github-square fa-1x" aria-hidden="true"></i>github</a></li>
+					<li><a href="https://www.behance.net/deisesouza" target="_blank"  title="behance" tabindex="4" accesskey="c"><i class="fa fa-behance-square fa-1x" aria-hidden="true"></i>behance</a></li>
+					<li><a href="https://bitbucket.org/Deise_Souza/" target="_blank" title="bitbucket" tabindex="5" accesskey="s"><i class="fa fa-bitbucket-square fa-1x" aria-hidden="true"></i>bitbucket</a></li>
+					<li><a href="https://br.linkedin.com/in/deise-santana-de-souza-3b004647" target="_blank" title="linkedin" tabindex="5" accesskey="s"><i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i>linkedin</a></li>
+				</ul>
+			</nav>	
+
+			<nav id="menu2">
+				<ul>
+					<li><a href="#" title="Acessibilidade" tabindex="1" accesskey="m" onclick="tocar();"><i class="fa fa-volume-up fa-1.8x" aria-hidden="true"></i></a></li>
+					<li><a tabindex="1" title="Parar Áudio" tabindex="2" accesskey="5" onclick="parar();"><i class="fa fa-volume-off fa-1.8x" aria-hidden="true"></i></a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<!--CONTEÚDO CENTRAL-->
+	<div class="principal">
+			
+				<article class="materias">
+								
+							<ul>
+								<li><a href="#" class="hvr-grow"><i class="fa fa-hashtag fa-1.5x" aria-hidden="true"></i>Tutoriais</a></li>
+								<li><a href="#" class="hvr-grow"><i class="fa fa-hashtag fa-1.5x" aria-hidden="true"></i>Livros</a></li>
+								<li><a href="#" class="hvr-grow"><i class="fa fa-hashtag fa-1.5x" aria-hidden="true"></i>Materiais Didáticos</a></li>
+								<li><a href="#" class="hvr-grow"><i class="fa fa-hashtag fa-1.5x" aria-hidden="true"></i>Vídeos</a></li>
+								<li><a href="#" class="hvr-grow"><i class="fa fa-hashtag fa-1.5x" aria-hidden="true"></i>Entrevistas</a></li>
+								<li><a href="#" class="hvr-grow"><i class="fa fa-hashtag fa-1.5x" aria-hidden="true"></i>Exemplos</a></li>
+								<li><a href="#" class="hvr-grow"><i class="fa fa-hashtag fa-1.5x" aria-hidden="true"></i>Execícios</a></li>											
+							</ul>
+
+				</article>	
+
+
+				<article class="quiz">
+						
+					<div id="imagens" class="imagens-videos">
+							<div id="conteudos1" class="larguras hvr-grow">
+								 <ul>
+									<li><a href="#video1" name="modal"><img id="01" src="img/link1.png"></a></li>
+								</ul>
+								  <div class="texto">
+								    <p>Carrinho de Controle Remoto</p>
+								  </div>
+							</div>
+
+							<div id="conteudos2" class="larguras hvr-grow">
+								  <ul>
+									<li><a href="#video2" name="modal"><img id="02" src="img/link2.png"></a></li>
+								</ul>
+								  <div class="texto">
+								    <p>Lanterna de Garrafa PET</p>
+								  </div>
+							</div>
+
+							<div id="conteudos3" class="larguras hvr-grow">
+								<ul>
+									<li><a href="#video3" name="modal"><img id="03" src="img/link3.png"></a></li>
+								</ul>
+								  <div class="texto">
+								    <p>Mão Biônica de Papelão</p>
+								  </div>
+							</div>
+
+							<div id="conteudos4" class="larguras hvr-grow">
+								<ul>
+									<li><a href="#video4" name="modal"><img id="04" src="img/link4.png"></a></li>
+								</ul>
+								  <div class="texto">
+								    <p>Aero Barco Ventilador</p>
+								  </div>
+							</div>
+
+							<div id="conteudos4" class="larguras hvr-grow">
+								<ul>
+									<li><a href="#video5" name="modal"><img id="05" src="img/link5.png"></a></li>
+								</ul>
+								  <div class="texto">
+								    <p>Gerador Termoelétrico</p>
+								  </div>
+							</div>
+
+							<div id="conteudos4" class="larguras hvr-grow">
+								<ul>
+									<li><a href="#video6" name="modal"><img id="06" src="img/link6.png"></a></li>
+								</ul>
+								  <div class="texto">
+								    <p>Escavadeira de Controle</p>
+								  </div>
+							</div>
+					</div>
+
+					
+				</article>
+		
+
+	</div> <!-- FIM DO CONTEÚDO CENTRAL -->
+
+		<!--JANELA MODAL-->
+		<div id="videos">
+
+			<div id="video1" class="window janelas">
+				<a href="#" class="close"><i class="fa fa-times"></i></a><br />  
+				<iframe width="800" height="450" src="https://www.youtube.com/embed/bprhVFaWjDw" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div id="video2" class="window janelas">
+				<a href="#" class="close"><i class="fa fa-times"></i></a><br />  
+				<iframe width="800" height="450" src="https://www.youtube.com/embed/FP2NbM3QGzQ?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div id="video3" class="window janelas">
+				<a href="#" class="close"><i class="fa fa-times"></i></a><br />  
+				<iframe width="800" height="450" src="https://www.youtube.com/embed/ADjNclZNSGc?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div id="video4" class="window janelas">
+				<a href="#" class="close"><i class="fa fa-times"></i></a><br />  
+				<iframe width="800" height="450" src="https://www.youtube.com/embed/vMRnd5ROdY0?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div id="video5" class="window janelas">
+				<a href="#" class="close"><i class="fa fa-times"></i></a><br />  
+				<iframe width="800" height="450" src="https://www.youtube.com/embed/wLrXYMJs-q8?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div id="video6" class="window janelas">
+				<a href="#" class="close"><i class="fa fa-times"></i></a><br />  
+				<iframe width="800" height="450" src="https://www.youtube.com/embed/e83drbSOoi4?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+
+		</div>				
+  		<div id="mask"></div><!-- Máscara para cobrir a tela -->
+
+		<!--RODAPÉ-->
+ 		<footer class="rodape">
+	          <div class="social-icons">
+		            <a href="#"><i class="fa fa-facebook"></i></a>
+		            <a href="#"><i class="fa fa-twitter"></i></a>
+		            <a href="#"><i class="fa fa-google"></i></a>
+		            <a href="#"><i class="fa fa-instagram"></i></a>
+	          </div>
+		          <p class="copyright">Copyright &copy; Deise Souza. Todos os direitos reservados.</p>
+        </footer>       
+       
+
+		<script>
+			$(".btn-menu").click(function(){
+				$(".menu").show();
+			});
+
+			$(".btn-close").click(function(){
+				$(".menu").hide();
+			});
+
+		</script>
+			
+</body>
+</html>
