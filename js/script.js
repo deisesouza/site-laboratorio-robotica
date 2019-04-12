@@ -53,7 +53,7 @@ $(document).ready(function() {
 
 
 
-/*ALTERAR IAMGENS*/
+/*ALTERAR IMAGENS*/
 function trocar(){
      document.getElementById('01').src="bonecos/02.png";
 }
